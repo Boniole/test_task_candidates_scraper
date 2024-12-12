@@ -1,18 +1,15 @@
-# Resume Scraper API
+# Resume Scraper API & Telegram Bot Integration
 
-This project is a FastAPI-based application designed to scrape, process, and evaluate resumes from the job platform [Work.ua](https://www.work.ua). The API provides structured resume data and optional AI-based evaluation to assist recruiters, HR professionals, and developers in automating and optimizing resume analysis.
-
----
+This project is a FastAPI-based application combined with a Telegram bot to scrape, process, and evaluate resumes from the job platform [Work.ua](https://www.work.ua). It provides structured resume data and optional AI-powered evaluation to assist recruiters, HR professionals, and developers in automating and optimizing resume analysis.
 
 ## Features
 
 - **Scraping Resumes from Work.ua**: Fetch resumes based on a specified job position.
 - **Real-Time Resume Processing**: Extract detailed information like name, age, location, and education.
 - **AI-Powered Evaluation**: Optionally evaluate resumes using OpenAI's GPT models to provide insights into hard skills, soft skills, and overall structure.
+- **Telegram Bot Integration**: Easily interact with the scraper and receive resume data directly in a Telegram chat.
 - **FastAPI Framework**: Built with FastAPI for high performance and intuitive API documentation.
 - **Asynchronous Processing**: Ensures high efficiency when handling multiple resumes simultaneously.
-
----
 
 ## Installation
 
@@ -21,6 +18,7 @@ This project is a FastAPI-based application designed to scrape, process, and eva
 - Python 3.9+
 - `pip` package manager
 - API key for OpenAI services
+- Telegram bot token
 
 ### Setup Instructions
 
@@ -56,6 +54,37 @@ This project is a FastAPI-based application designed to scrape, process, and eva
 
 6.	**Access the API**:
 Open your browser and navigate to http://<your_local_ip>:8000/docs to view the Swagger documentation.
+
+
+### Telegram Bot Commands
+	•	/start: Starts the bot and provides a welcome message.
+	•	Job Position Query: Simply type a job position (e.g., “Python Developer”) to fetch resumes.
+
+Example Telegram Output
+    ```bash
+    🔍 Fetching resumes for: Python Developer...
+
+    📄 Title: Python Developer
+    👤 Name: John Doe
+    🎂 Age: 30 years
+    📍 Location: Kyiv
+    🔗 Link: [View Resume](https://www.work.ua/resumes/123456/)
+    🎓 Education: Master's in Computer Science
+    📅 Last Update: 1 day ago
+    ⭐ Average Score: 8.5
+
+    📊 Evaluation Scores:
+    - Hard Skills: 8
+    - Soft Skills: 9
+    - Education: 7
+    - Languages: 8
+    - Work Experience: 7
+    - Projects & Certificates: 9
+    - Overall Structure: 8
+
+    💡 Recommendations:
+    - Highlight leadership skills.
+    - Provide more details on recent projects.
 
 ### Endpoints
 
