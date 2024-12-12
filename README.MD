@@ -55,7 +55,7 @@ This project is a FastAPI-based application designed to scrape, process, and eva
 
 
 6.	**Access the API**:
-Open your browser and navigate to http://127.0.0.1:8000/docs to view the Swagger documentation.
+Open your browser and navigate to http://<your_local_ip>:8000/docs to view the Swagger documentation.
 
 ### Endpoints
 
@@ -147,6 +147,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ## Contact
 
 For support or questions, please contact:
-	•	Name: Your Name
-	•	Email: your-email@example.com
-	•	GitHub: your-username
+	•	Name: Serhii Dratovanyi
+	•	Email: sboniole@gmail.com
+	•	GitHub: Boniole
